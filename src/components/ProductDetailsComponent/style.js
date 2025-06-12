@@ -56,3 +56,7 @@ export const WrapperAddressProduct = styled.div`
     }
 
 `
+
+export const WrapperQualityProduct = styled.div`
+
+`

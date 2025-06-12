@@ -2,8 +2,11 @@ import { Col, Image, Row } from 'antd'
 import React from 'react'
 import imageProduct from '../../asset/image/test.webp'
 import imageProductsmall from '../../asset/image/small.webp'
-import { WrapperAddressProduct, WrapperPriceProduct, WrapperPriceTextProduct, WrapperStyleColSmall, WrapperStyleImageSmall, WrapperStyleNameProduct, WrapperStyleTextSell } from './style'
-import { StarFilled } from '@ant-design/icons'
+import { WrapperAddressProduct, WrapperPriceProduct, WrapperPriceTextProduct, WrapperQualityProduct, WrapperStyleColSmall, WrapperStyleImageSmall, WrapperStyleNameProduct, WrapperStyleTextSell } from './style'
+import { MinusOutlined, PlusOutlined, StarFilled } from '@ant-design/icons'
+import ButtonComponent from '../ButtonComponent/ButtonComponent'
+
+
 
 const ProductDetailsComponent = () => {
   return (
@@ -53,6 +56,14 @@ const ProductDetailsComponent = () => {
                     <span className='address'>14A, Định Công, Hoàng Mai, Hà Nội </span>
                     <span className='change-address'>Đổi địa chỉ</span>
             </WrapperAddressProduct>
+            <WrapperQualityProduct>
+                <div>Số lượng</div>
+                <div>
+                    <MinusOutlined style={{color:'#000', fontSize:'10px'}} />
+                    < PlusOutlined style={{color:'#000', fontSize:'10px'}} />
+                    
+                </div>
+            </WrapperQualityProduct>
         </Col> 
     </Row>
   )
